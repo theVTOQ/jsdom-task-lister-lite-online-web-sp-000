@@ -4,6 +4,11 @@ class TaskList {
     this.tasks = [];
   }
 
+  createNewTask(description) {
+    newTask = Task.new(description);
+    this.tasks.push(newTask);
+  }
+
   renderTasks() {
     return this.tasks.map((task) => task.render()).join("");
   }
