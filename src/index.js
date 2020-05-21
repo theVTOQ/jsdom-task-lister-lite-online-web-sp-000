@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const todoList = document.getElementById("tasks");
   const newTaskListForm = document.getElementById("create-task-form");
   const newTaskDescription = document.getElementById("new-task-description");
-  const taskDescriptionArray = [];
+  let taskDescriptionArray = [];
 
   function refreshTodoList(){
     let innerHtmlForList = "";
