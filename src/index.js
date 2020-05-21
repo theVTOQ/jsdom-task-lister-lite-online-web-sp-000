@@ -9,6 +9,6 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     const newListButton = document.createElement("li");
     newListButton.innerHtml = newTaskDescription.value;
-    todoList.appendChild(newListButton)
+    todoList.appendChild(newListButton);
   });
 });
