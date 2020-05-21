@@ -9,14 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
     event.preventDefault();
     const newTask = document.createElement("li");
     taskNameArray.push(newTaskDescription.value)
-    
+
     //reset form:
     event.target.reset();
   });
 
   todoList.addEventListener("click", function (event){
     if (event.target.nodeName === "BUTTON"){
-      
+
     }
   });
 
