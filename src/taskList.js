@@ -14,10 +14,17 @@ class TaskList {
   }
 
   renderTasksByPriority() {
-    //To Do:
+    return this.tasks.sort((taskA, taskB) => taskA.priority - taskB.priority).map((task) => task.render()).join("");
   }
 
   deleteTask(description) {
     this.tasks = this.tasks.filter((task) => task.description !== description);
+  }
+
+  compare(taskA, taskB) {
+    const priorityA = taskA.priority
+    const priorityB = taskB.priority
+
+
   }
 }
