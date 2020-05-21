@@ -15,8 +15,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   todoList.addEventListener("click", function (event){
     if (event.target.nodeName === "BUTTON"){
+      taskNameArray = taskNameArray.filter((value) => value !=== event.target.dataset.description)
       for(let i = 0; i < taskNameArray.length; i++){
-        if(taskNameArray[i] === event.target.dataset.description)
+        if(taskNameArray[i] === event.target.dataset.description){
+          todoList.splice()
+        }
       }
     }
     refreshTodoList();
