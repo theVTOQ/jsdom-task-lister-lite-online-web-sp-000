@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   newTaskListForm.addEventListener("submit", function (event){
     event.preventDefault();
-    const newTask = document.createElement("li");
     taskNameArray.push(newTaskDescription.value)
 
     //reset form:
@@ -21,9 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   refreshTodoList() {
+    let innerHtml = "";
     for (let i = 0; i < todoList.length(); i++) {
+      const newTask = document.createElement("li");
       newTask.innerHtml = `${newTaskDescription.value} <button data-description="${this.description}">X</button>`;
       todoList.appendChild(newTask);
     }
+    todoList.innerHtml = innerHtml
   }
 });
