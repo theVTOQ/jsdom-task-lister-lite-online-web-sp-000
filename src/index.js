@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   submitButton.addEventListener("submit", function (event){
     event.preventDefault();
     const newListButton = document.createElement("li");
-    newListButton.innerHtml = event.text;
+    newListButton.innerHtml = newTaskDescription.value;
     todoList.appendChild(newListButton)
   });
 });
