@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     todoList.innerHtml = innerHtmlForList;
   }
 
-  newTaskListForm.addEventListener("submit", function (event){
+  newTaskListForm.addEventListener("submit", (event) => {
     event.preventDefault();
     taskDescriptionArray.push(newTaskDescription.value)
     refreshTodoList();
