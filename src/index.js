@@ -6,9 +6,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   newTaskListForm.addEventListener("submit", function (event){
     event.preventDefault();
-    const newListButton = document.createElement("li");
-    newListButton.innerHtml = newTaskDescription.value;
-    todoList.appendChild(newListButton);
+    const newTask = document.createElement("li");
+    newTask.innerHtml = newTaskDescription.value;
+    todoList.appendChild(newTask);
     //reset form:
     event.target.reset();
   });
