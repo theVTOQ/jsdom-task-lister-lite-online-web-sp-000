@@ -17,7 +17,7 @@ class TaskList {
     //To Do:
   }
 
-  deleteTask() {
+  deleteTask(description) {
     this.tasks = this.tasks.filter((task) => task.description !== description);
   }
 }
