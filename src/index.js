@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // your code here
-  const todoList = document.getElementByTagName("ul");
+  const todoList = document.getElementById("tasks");
   const newTaskListForm = document.getElementById("create-new-task-form");
   const newTaskDescription = document.getElementById("new-task-description");
   const taskDescriptionArray = [];
