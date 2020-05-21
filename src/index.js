@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   function refreshTodoList(){
     let innerHtmlForList = "";
     for (let i = 0; i < taskDescriptionArray.length; i++) {
-      innerHtml += `<li>${taskDescriptionArray[i]} <button data-description="${taskDescriptionArray[i]}">X</button></li>`;
+      innerHtmlForList += `<li>${taskDescriptionArray[i]} <button data-description="${taskDescriptionArray[i]}">X</button></li>`;
     }
     todoList.innerHtml = innerHtmlForList;
   }
