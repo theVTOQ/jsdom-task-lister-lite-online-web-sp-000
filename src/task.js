@@ -1,7 +1,8 @@
 //not currently used...
 class Task {
-  constructor(description) {
+  constructor(description, priority) {
     this.description = description;
+    this.priority = priority;
   }
 
   render() {
