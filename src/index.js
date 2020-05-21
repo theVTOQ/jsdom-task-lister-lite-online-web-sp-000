@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   todoList.addEventListener("click", function (event){
     if (event.target.nodeName === "BUTTON"){
       for(let i = 0; i < taskNameArray.length; i++){
-
+        if(taskNameArray[i] === event.target.dataset.description)
       }
     }
     refreshTodoList();
