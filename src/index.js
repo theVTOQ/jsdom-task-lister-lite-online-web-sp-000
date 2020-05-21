@@ -22,8 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
   refreshTodoList() {
     let innerHtml = "";
     for (let i = 0; i < todoList.length(); i++) {
-      const newTask = document.createElement("li");
-      newTask.innerHtml = `${newTaskDescription.value} <button data-description="${this.description}">X</button>`;
+      innerHtml = `<li>${newTaskDescription.value} <button data-description="${this.description}">X</button></li>`;
       todoList.appendChild(newTask);
     }
     todoList.innerHtml = innerHtml
