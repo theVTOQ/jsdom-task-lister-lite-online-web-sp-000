@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   newTaskListForm.addEventListener("submit", function (event){
     event.preventDefault();
     taskNameArray.push(newTaskDescription.value)
-
+    refreshTodoList();
     //reset form:
     event.target.reset();
   });
@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (event.target.nodeName === "BUTTON"){
 
     }
+    refreshTodoList();
   });
 
   refreshTodoList() {
