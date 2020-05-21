@@ -9,5 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const newListButton = document.createElement("li");
     newListButton.innerHtml = newTaskDescription.value;
     todoList.appendChild(newListButton);
+    //reset form:
+    event.target.reset();
   });
 });
