@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
     taskDescriptionArray.push(newTaskDescription.value)
     refreshTodoList();
     //reset form:
-    //event.target.reset();
+    event.target.reset();
   });
 
   todoList.addEventListener("click", function (event){
