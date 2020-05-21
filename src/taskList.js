@@ -8,6 +8,10 @@ class TaskList {
     return this.tasks.map((task) => task.render()).join("");
   }
 
+  renderTasksByPriority() {
+    //To Do:
+  }
+
   deleteTask() {
     this.tasks = this.tasks.filter((task) => task.description !== description);
   }
