@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   todoList.addEventListener("click", function (event){
-    if (event.target.nodeDescription === "BUTTON"){
+    if (event.target.nodeName === "BUTTON"){
       taskDescriptionArray = taskDescriptionArray.filter((value) => value !=== event.target.dataset.description)
     }
     refreshTodoList();
